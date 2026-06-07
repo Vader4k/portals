@@ -1,8 +1,13 @@
-import React from 'react'
+import { Canvas } from "@react-three/fiber"
+import { SceneContainer } from "../SceneContainer"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div style={{ height: "100vh", width: "100vw" }}>
+      <Canvas >
+        <SceneContainer />
+      </Canvas>
+    </div>
   )
 }
 
