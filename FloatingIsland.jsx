@@ -2,7 +2,6 @@ import { useLoader } from "@react-three/fiber"
 import { useEffect } from "react"
 import { BufferAttribute, Color } from "three"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-import Buffer from "three/src/renderers/common/Buffer.js"
 
 export function FloatingIsland() {
 
@@ -11,7 +10,6 @@ export function FloatingIsland() {
     useEffect(() => {
         if (!gltf) return;
 
-        console.log(gltf)
 
         let mesh = gltf.scene.children[0];
 
