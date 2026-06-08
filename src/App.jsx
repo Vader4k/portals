@@ -4,7 +4,7 @@ import { SceneContainer } from "../SceneContainer"
 const App = () => {
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
-      <Canvas >
+      <Canvas gl={{ stencil: true }}>
         <SceneContainer />
       </Canvas>
     </div>
